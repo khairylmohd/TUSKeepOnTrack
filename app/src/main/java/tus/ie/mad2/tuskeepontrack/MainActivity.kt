@@ -13,6 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import tus.ie.mad2.tuskeepontrack.dashboard.DashboardScreen
 import tus.ie.mad2.tuskeepontrack.login.LoginScreen
+import tus.ie.mad2.tuskeepontrack.moodle_events.EventScreen
+import tus.ie.mad2.tuskeepontrack.navigation.BuildNavigationGraph
+import tus.ie.mad2.tuskeepontrack.study_mode.StartScreen
+import tus.ie.mad2.tuskeepontrack.study_mode.StudyScreen
 import tus.ie.mad2.tuskeepontrack.ui.theme.TUSKeepOnTrackTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +25,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TUSKeepOnTrackTheme {
-                LoginScreen()
+                BuildNavigationGraph()
             }
         }
     }
